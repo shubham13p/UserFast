@@ -17,15 +17,7 @@ import java.util.ArrayList;
 
 public class MyShopList extends AppCompatActivity {
 
-////////
-
-    //  dmlist
-
-
-
-
-    //////
-    private ListView lv;
+private ListView lv;
     private ArrayList<Model> modelArrayList;
     private CustomAdapter customAdapter;
     private Button btnselect, btndeselect, btnnext;
@@ -50,8 +42,6 @@ public class MyShopList extends AppCompatActivity {
         listName = i.getStringExtra("listName");
 
 
-
-
         bill.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,17 +58,24 @@ public class MyShopList extends AppCompatActivity {
                 }
                 FirebaseDatabase database = FirebaseDatabase.getInstance();
                 DatabaseReference myRef = database.getReference("remainingList").push();
+                //myRef.setValue(remainingList);
+
+
+                if(!remainingList.getListItems().isEmpty()){
                 myRef.setValue(remainingList);
-
-
+                }
+                ArrayList<String> checkedItems = new ArrayList<String>();
                 for (int i = 0; i < CustomAdapter.modelArrayList.size(); i++){
                     if(CustomAdapter.modelArrayList.get(i).getSelected()) {
-                        Intent i1 = new Intent(MyShopList.this, MainActivity.class);
-                        startActivity(i1);
+                        checkedItems.add(CustomAdapter.modelArrayList.get(i).getitems());
 
                         // tv.setText(tv.getText() + " " + CustomAdapter.modelArrayList.get(i).getitems());
                     }
                 }
+                Intent i1 = new Intent(MyShopList.this, MyBill.class);
+                i1.putStringArrayListExtra("bill", checkedItems);
+                i1.putExtra("listName", listName);
+                startActivity(i1);
             }
         });
 
@@ -106,6 +103,7 @@ public class MyShopList extends AppCompatActivity {
     }
     private ArrayList<Model> getModel(boolean isSelect){
         ArrayList<Model> list = new ArrayList<>();
+
         for(int i = 0; i < length; i++){
 
             Model model = new Model();

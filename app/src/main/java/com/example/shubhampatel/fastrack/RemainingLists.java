@@ -51,7 +51,6 @@ public class RemainingLists extends AppCompatActivity {
                     listoflist.add(data.child("listName").getValue(String.class));
                 }
                 adapter.notifyDataSetChanged();
-
             }
 
             @Override

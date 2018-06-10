@@ -326,7 +326,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     points.add(position);
                 }
                 lineOptions.addAll(points);
-                lineOptions.width(10);
+                lineOptions.width(8);
 
 
                 lineOptions.color(Color.RED);
@@ -397,13 +397,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         double lat = latLng.latitude;
         double lng = latLng.longitude;
 
-//        double lat = 37.350725;
-//        double lng = -121.933829;
 
 //        start
 //        double lat = 37.350758;
 //        double lng = -121.933852;
 
+//        double lat = 37.350725;
+//        double lng = -121.933829;
 
 //        middle
 //           double lat = 37.350940;

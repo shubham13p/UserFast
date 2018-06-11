@@ -3,8 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/colorPrimaryDark"
-
     android:layout_height="match_parent"
     tools:context=".Lokcation">
 
@@ -13,25 +11,45 @@
         android:layout_height="match_parent"
         tools:ignore="MissingConstraints">
 
-        <com.google.android.gms.maps.MapView
+        <!--<com.google.android.gms.maps.MapView-->
+            <!--android:id="@+id/mapView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="500dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_margin="20dp"-->
+            <!--android:layout_marginStart="0dp"-->
+            <!--android:layout_marginTop="0dp" />-->
+
+
+        <ImageView
             android:id="@+id/mapView"
             android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_margin="20dp"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="0dp" />
+            android:layout_height="400dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@color/colorStroke"/>
 
-        <Button
-            android:id="@+id/mylist"
-            android:layout_width="100dp"
-            android:layout_height="45dp"
-            android:layout_below="@+id/mapView"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center_vertical"
-            android:layout_marginTop="20dp"
-            android:text="MY LIST" />
+            <Button
+                android:id="@+id/mybill"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/mapView"
+                android:text="MY BILL" />
+
+            <Button
+                android:id="@+id/mylist"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/mapView"
+                android:text="MY LIST"/>
 
     </RelativeLayout>
 

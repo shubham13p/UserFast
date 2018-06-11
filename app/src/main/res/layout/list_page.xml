@@ -1,29 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_gravity="center">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="548dp"
-        android:layout_margin="10dp">
+        android:layout_margin="10dp"
+        android:gravity="center">
 
-        <ListView
-            android:id="@+id/innerList"
+
+        <LinearLayout
+            android:id="@+id/linear4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="100dp"></ListView>
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
 
-        <Button
-            android:id="@+id/shop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:text="SHOP"/>
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="-60dp"
+                android:layout_marginRight="20dp"
+                android:paddingTop="20dp"
+                android:text="FastPath"
+                android:textColor="#e76d0e"
+                android:textSize="45dp"
+                android:textStyle="normal"
+
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:background="@drawable/path"
+                android:layout_marginBottom="-1000dp"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear4">
+
+            <ListView
+                android:id="@+id/innerList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="100dp"
+                android:foregroundGravity="center"
+                />
+
+            <Button
+                android:id="@+id/shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="SHOP"
+                android:textColor="#e76d0e"
+                android:background="@color/white"/>
+
+        </RelativeLayout>
+
+
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -3,26 +3,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="0dp"
-    android:background="@color/colorPrimaryDark"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".Howtocreatelist">
+    tools:context=".Howtocreatelist"
+    android:background="@drawable/gradient">
 
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="-60dp"
+            android:layout_marginRight="20dp"
+            android:paddingTop="20dp"
+            android:text="FastPath"
+            android:textColor="#e76d0e"
+            android:textSize="45dp"
+            android:textStyle="normal"
+
+            />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:background="@drawable/path"
+            android:layout_marginBottom="-1000dp"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:text="Click on Camera to take a picture of your list"/>
 
 
     <Button
+        android:layout_marginTop="20dp"
         android:id="@+id/fromcamera"
-        android:layout_marginTop="10dp"
         android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:text="CAMERA"
+        android:textColor="@color/darkOrange"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttoncorners"/>
+
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CAMERA" />
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Click here to create your shopping list Manually"/>
 
     <Button
         android:id="@+id/fromdatabase"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="DATABASE" />
+        android:layout_height="30dp"
+        android:text="DATABASE"
+        android:textColor="@color/darkOrange"
+        android:background="@drawable/buttoncorners"/>
 
 
 </LinearLayout>

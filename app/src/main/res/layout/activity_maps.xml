@@ -2,10 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
     >
+
 
 <fragment android:id="@+id/map"
     android:name="com.google.android.gms.maps.SupportMapFragment"
@@ -20,12 +20,15 @@
     <Button
         android:id="@+id/mylist"
         android:layout_width="100dp"
-        android:layout_height="45dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="10dp"
         android:layout_below="@+id/map"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_vertical"
         android:layout_marginTop="20dp"
-        android:text="MY LIST" />
+        android:text="MY LIST"
+        android:background="@color/white"
+        android:textColor="@color/darkOrange"/>
 
 
 

@@ -92,9 +92,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         Log.e("customerlist", customerlist);
         itemarray = customerlist.split(":");
-        for (i = 0; i < itemarray.length; i++) {
-            Toast.makeText(MapsActivity.this, itemarray[i], Toast.LENGTH_SHORT).show();
-        }
+
 
         mFireBaseDatabase = FirebaseDatabase.getInstance();
         databaseproduct = FirebaseDatabase.getInstance().getReference("product");

@@ -3,56 +3,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-
     android:orientation="vertical"
-    android:layout_margin="0dp"
-    tools:context=".MyShopList">
+    tools:context=".MyShopList"
+    android:background="@drawable/gradient">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="10dp">
 
-        <ListView
-            android:id="@+id/lv"
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="20dp"
+            android:id="@+id/linear8">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="-60dp"
+                android:layout_marginRight="20dp"
+                android:paddingTop="20dp"
+                android:text="FastPath"
+                android:textColor="#e76d0e"
+                android:textSize="45dp"
+                android:textStyle="normal"
+
+                />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:background="@drawable/path"
+                android:layout_marginBottom="-1000dp"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="8dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="100dp"
-            tools:ignore="MissingConstraints" />
+            android:layout_below="@+id/linear8">
 
-        <Button
-            android:id="@+id/selectall"
-            android:layout_marginTop="20dp"
-            android:layout_width="100dp"
-            android:layout_height="45dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:text="ALL" />
+            <ListView
+                android:id="@+id/lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="100dp"
+                tools:ignore="MissingConstraints" />
 
-        <Button
-            android:id="@+id/deselectall"
-            android:layout_marginTop="20dp"
-            android:layout_width="100dp"
-            android:layout_height="45dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:text="CLEAR" />
+            <Button
+                android:id="@+id/selectall"
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:text="ALL"
+                android:background="@color/white"
+                android:textColor="@color/darkOrange"/>
+
+            <Button
+                android:id="@+id/deselectall"
+                android:layout_marginTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="CLEAR"
+                android:background="@color/white"
+                android:textColor="@color/darkOrange"/>
 
 
-        <Button
-            android:id="@+id/bill"
-            android:layout_width="100dp"
-            android:layout_marginTop="20dp"
-            android:layout_height="45dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:text="PAYMENT" />
+            <Button
+                android:id="@+id/bill"
+                android:layout_width="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:text="PAYMENT"
+                android:background="@color/white"
+                android:textColor="@color/darkOrange"/>
+
+
+        </RelativeLayout>
+
+
 
 
     </RelativeLayout>

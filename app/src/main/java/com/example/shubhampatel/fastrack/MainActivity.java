@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
-        usernamedispaly = findViewById(R.id.username);
+       // usernamedispaly = findViewById(R.id.username);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
         createlist = (Button) findViewById(R.id.cretelist);
         bill = (Button) findViewById(R.id.bills);
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(MainActivity.this,Login.class);
             startActivity(i);
         }
-        usernamedispaly.setText("WELCOME : " + Login.clientusername);
+        //usernamedispaly.setText("WELCOME : " + Login.clientusername);
 
 
         remaining.setOnClickListener(new View.OnClickListener() {

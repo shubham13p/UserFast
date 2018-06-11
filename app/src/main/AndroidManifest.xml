@@ -13,13 +13,10 @@
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <uses-feature
         android:glEsVersion="0x00020000"
         android:required="true" />
-
-
-
-
 
     <meta-data
         android:name="com.google.android.geo.API_KEY"
@@ -56,7 +53,7 @@
         <activity android:name=".Forgotpassword" />
         <activity android:name=".MainActivity" />
         <activity android:name=".MainActivity1" />
-        <!--<activity android:name=".Lokcation" />-->
+        <!-- <activity android:name=".Lokcation" /> -->
         <activity android:name=".CropAndRotate" />
         <activity android:name=".Binarization" />
         <activity android:name=".Recognizer" />
@@ -65,14 +62,13 @@
         <activity android:name=".MapsActivity" />
         <activity android:name=".MyShopList" />
         <activity android:name=".MyBill" />
-        <activity android:name=".CreateListFromDB"/>
-        <activity android:name=".LetsShop"/>
-        <activity android:name=".ListPage"/>
-        <activity android:name=".RemainingLists"/>
-        <activity android:name=".RemainingListPage"/>
-        <activity android:name=".BillProducts"/>
-        <activity android:name=".BillHistory"/>
-
+        <activity android:name=".CreateListFromDB" />
+        <activity android:name=".LetsShop" />
+        <activity android:name=".ListPage" />
+        <activity android:name=".RemainingLists" />
+        <activity android:name=".RemainingListPage" />
+        <activity android:name=".BillProducts" />
+        <activity android:name=".BillHistory" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -96,7 +92,10 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        </application>
-
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme"></activity>
+    </application>
 
 </manifest>

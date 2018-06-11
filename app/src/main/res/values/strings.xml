@@ -35,5 +35,12 @@
     <string name="permission_request_title">Special Permission Request</string>
     <string name="app_permission_notice">This permission request is very important to your app functionality. If it is not granted your app might not work the way it is intended</string>
     <string name="failed_draw">Empty line path return</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 
 </resources>

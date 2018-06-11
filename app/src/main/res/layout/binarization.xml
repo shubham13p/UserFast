@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:background="@drawable/gradient"
     tools:context=".Binarization">
 
     <android.support.v7.widget.Toolbar
@@ -13,7 +14,6 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:titleTextColor="@color/colorTitle"
-        android:background="@color/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
@@ -30,15 +30,14 @@
         android:padding="35dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
         android:layout_below="@+id/toolbar"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Enhance"
-            android:textSize="13sp"
-            android:textColor="@color/colorTitle"
+            android:textSize="16sp"
+            android:textColor="#000000"
             />
         <android.support.v7.widget.AppCompatSeekBar
             android:id="@+id/umbralization"
@@ -51,6 +50,7 @@
         android:id="@+id/croppedImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
         android:layout_below="@+id/extension" />
 
     <android.support.design.widget.FloatingActionButton

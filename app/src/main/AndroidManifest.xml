@@ -69,6 +69,7 @@
         <activity android:name=".RemainingListPage" />
         <activity android:name=".BillProducts" />
         <activity android:name=".BillHistory" />
+        <activity android:name=".NotesPage"/>
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

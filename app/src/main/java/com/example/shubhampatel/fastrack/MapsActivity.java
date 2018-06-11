@@ -392,13 +392,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 //        double lng = -121.934822;
 
 //        current location of yrs.
-        double lat = latLng.latitude;
-        double lng = latLng.longitude;
+//        double lat = latLng.latitude;
+//        double lng = latLng.longitude;
 
 
 //        start
-//        double lat = 37.350758;
-//        double lng = -121.933852;
+        double lat = 37.350758;
+        double lng = -121.933852;
 
 //        double lat = 37.350725;
 //        double lng = -121.933829;

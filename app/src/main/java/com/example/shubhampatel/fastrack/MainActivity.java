@@ -111,6 +111,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        note.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, NotesPage.class);
+                startActivity(i);
+            }
+        });
+
         createlist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

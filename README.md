@@ -59,7 +59,7 @@ These instructions will help you get the project up and running on your local ma
 ### Current Version
   * 1.0
 ### ScreenShot
-  * Please open readme.pdf file link <https://github.com/shubham13p/UserFast/blob/master/README.pdf>
+  * Please open readme.pdf file [link](https://github.com/shubham13p/UserFast/blob/master/README.pdf)
 ### Developer
   * Shubham Amitkumar Patel
   * Sanika Lakka
